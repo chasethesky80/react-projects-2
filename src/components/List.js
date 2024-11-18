@@ -18,7 +18,7 @@ export default function List() {
         return <div>Loading...</div>
     }
     return (
-        <div>
+        <div className="row">
             {characters?.map((character) => <Character key={character?.key} origin={character?.origin} image={character?.image} name={character?.name}/>)}
         </div>
     )
